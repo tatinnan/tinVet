@@ -200,8 +200,19 @@ namespace Vet
             }
             if (cb_gb01_babyAt61.Checked)
             {
-                int at = int.Parse(mnr_gb01_babyAt61.Text);
-                att = at * 60000;
+                int at01 = int.Parse(mnr_gb01_babyAt61.Text);
+                int at = 0,at0_1=0;
+                if (at01 > 2)
+                {
+                    at0_1 = (at01 - 2)*60000;
+                    int at02 = 2 * 30000;
+                    at = at02 + at0_1;
+                    att = at;
+                }
+                else if (at01 <= 2)
+                {
+                    att = at01 * 30000;
+                }
             }
             if (cb_gb01_Mn.Checked)
             {
