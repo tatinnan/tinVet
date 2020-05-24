@@ -46,7 +46,7 @@ namespace Vet
             button3.Enabled = true;
             button4.Enabled = true;
             button5.Enabled = true;
-            cb_gb01_single.Checked = false;
+            /*cb_gb01_single.Checked = false;
             cb_gb01_My.Checked = false;
             cb_gb01_Mn.Checked = false;
             cb_gb01_babyN.Checked = false;
@@ -63,7 +63,7 @@ namespace Vet
             tb_gb01_brn.Text = "0";
             tb_gb01_VSum.Text = "";
             mnr_gb01_babyAt61.Enabled = false;
-            mnr_gb01_babyBf61.Enabled = false;
+            mnr_gb01_babyBf61.Enabled = false;*/
         }//*********************************************************************************************************************************************
 
         private void Button4_Click(object sender, EventArgs e)
@@ -78,7 +78,7 @@ namespace Vet
             button3.Enabled = true;
             button1.Enabled = true;
             button5.Enabled = true;
-            radioButton1.Checked = false;
+            /*radioButton1.Checked = false;
             radioButton2.Checked = false;
             radioButton3.Checked = false;
             mnr_gb02_1.Enabled = false;
@@ -110,7 +110,7 @@ namespace Vet
             b.Text = "0";
             c.Text = "0";
             g.Text = "0";
-            textBox29.Text = "";
+            textBox29.Text = "";*/
 
         }//*********************************************************************************************************************************************
 
@@ -126,8 +126,8 @@ namespace Vet
             button3.Enabled = true;
             button4.Enabled = true;
             button5.Enabled = true;
-            gb2558.Visible = false;
-            gb2562.Visible = false;
+            /*gb2558.Visible = false;
+            gb2562.Visible = false;*/
         }//*********************************************************************************************************************************************
 
         private void Button3_Click(object sender, EventArgs e)
@@ -142,7 +142,7 @@ namespace Vet
             button1.Enabled = true;
             button4.Enabled = true;
             button5.Enabled = true;
-            tb_gb04_SumVet.Text = "0";
+            /*tb_gb04_SumVet.Text = "0";
             tb_gb04_12.Text = "0";
             tb_gb04_22.Text = "0";
             tb_gb04_32.Text = "0";
@@ -157,7 +157,7 @@ namespace Vet
             tb_gb04_5.Text = "0";
             tb_gb04_6.Text = "0";
             mmr_gb04_7.Value = 0;
-            tbSumVet.Text = "0";
+            tbSumVet.Text = "0";*/
         }//*********************************************************************************************************************************************
 
         private void Button5_Click(object sender, EventArgs e)
@@ -172,7 +172,7 @@ namespace Vet
             button3.Enabled = true;
             button4.Enabled = true;
             button1.Enabled = true;
-            numericUpDown19.Value = 0;
+            /*numericUpDown19.Value = 0;
             numericUpDown18.Value = 0;
             numericUpDown17.Value = 0;
             numericUpDown16.Value = 0;
@@ -180,7 +180,7 @@ namespace Vet
             numericUpDown14.Value = 0;
             numericUpDown13.Value = 0;
             numericUpDown12.Value = 0;
-            textBox31.Text = "";
+            textBox31.Text = "";*/
         }//***********************************************************************************************************************************************
 
         private void Bt_gb01_sum_Click(object sender, EventArgs e)
