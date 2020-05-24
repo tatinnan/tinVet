@@ -88,7 +88,29 @@ namespace Vet
             numericUpDown3.Enabled = false;
             textBox10.Enabled = false;
             textBox29.Text = "";
-
+            numericUpDown1.Enabled = false;//*
+            checkBox18.Checked = false;
+            checkBox13.Checked = false;
+            checkBox15.Checked = false;
+            checkBox1.Checked = false;
+            checkBox17.Checked = false;
+            checkBox16.Checked = false;
+            checkBox12.Checked = false;
+            mnr_gb02_1.Value = 0;
+            mnr_gb02_2.Value = 0;
+            mnr_gb02_3.Value = 0;
+            numericUpDown1.Value = 0;
+            numericUpDown7.Value = 0;
+            numericUpDown3.Value = 0;
+            textBox10.Value = 0;
+            lb_mnr_gb02_1.Text = "0";
+            lb_mnr_gb02_2.Text = "0";
+            lb_mnr_gb02_3.Text = "0";
+            label113.Text = "0";
+            b.Text = "0";
+            c.Text = "0";
+            g.Text = "0";
+            textBox29.Text = "";
 
         }//*********************************************************************************************************************************************
 
@@ -315,6 +337,15 @@ namespace Vet
             }
         }
 
+        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            numericUpDown1.Enabled = true;
+            if (checkBox1.Checked == false)
+            {
+                numericUpDown1.Enabled = false;
+            }
+        }
+
         private void CheckBox16_CheckedChanged(object sender, EventArgs e)
         {
             numericUpDown3.Enabled = true;
@@ -471,6 +502,29 @@ namespace Vet
             textBox10.Enabled = false;
             textBox29.Text = "";
             label29.Text = sum_gb02.ToString();
+            numericUpDown1.Enabled = false;
+            checkBox18.Checked = false;
+            checkBox13.Checked = false;
+            checkBox15.Checked = false;
+            checkBox1.Checked = false;
+            checkBox17.Checked = false;
+            checkBox16.Checked = false;
+            checkBox12.Checked = false;
+            mnr_gb02_1.Value = 0;
+            mnr_gb02_2.Value = 0;
+            mnr_gb02_3.Value = 0;
+            numericUpDown1.Value = 0;
+            numericUpDown7.Value = 0;
+            numericUpDown3.Value = 0;
+            textBox10.Value = 0;
+            lb_mnr_gb02_1.Text = "0";
+            lb_mnr_gb02_2.Text = "0";
+            lb_mnr_gb02_3.Text = "0";
+            label113.Text = "0";
+            b.Text = "0";
+            c.Text = "0";
+            g.Text = "0";
+            textBox29.Text = "";
         }
 
         private void PictureBox9_Click(object sender, EventArgs e)
@@ -496,6 +550,11 @@ namespace Vet
             mnr_gb01_babyBf61.Enabled = false;
             label85.Text = sum_gb01.ToString();
         }//********************************************************************************************************************************************
+
+        private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void BtCal_Click(object sender, EventArgs e)
         {//คำนวณภาษี ***********************************************************************************************************************************
@@ -664,7 +723,7 @@ namespace Vet
         }*/
         private void Button12_Click(object sender, EventArgs e)
         {//กลุ่มที่ 2 ********************************************************************************************************************
-            int snO=0,sangkomm=0,leanggg=0,mafa=0,life=0,heal=0,gbk=0;
+            int snO=0,sangkomm=0,leanggg=0,mafa=0,life=0,heal=0,gbk=0,soomros=0;
             if (radioButton3.Checked)
             {
                 snO = 10000;
@@ -739,7 +798,16 @@ namespace Vet
                 }
                 g.Text = gbk.ToString();
             }
-            sum_gb02 = snO+sangkomm+leanggg+mafa+life+heal+gbk;
+            if (checkBox1.Checked)
+            {
+                soomros = int.Parse(numericUpDown1.Text);
+                if (soomros > 10000)
+                {
+                    soomros = 10000;
+                }
+                label113.Text = soomros.ToString();
+            }
+            sum_gb02 = snO+sangkomm+leanggg+mafa+life+heal+gbk+soomros;
             textBox29.Text = sum_gb02.ToString();
             label29.Text = sum_gb02.ToString();
         }//***********************************************************************************************************************************
